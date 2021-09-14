@@ -1,0 +1,207 @@
+/*For bigger screen then normal 1500px desktop*/
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+
+.container {
+	max-width: 1100px;
+}
+
+.main-menu ul li {
+    margin: 0 20px;
+}
+.main-menu ul li a {
+    font-size: 28px;
+}
+.menu-content {
+    margin-right: 0;
+}
+.shape1 {
+    left: 2%;
+}
+
+.date-slider .owl-next, 
+.date-slider .owl-prev{
+  left: -55px;
+}
+.date-slider .owl-prev{
+  left: auto;
+  right: -55px;
+}
+
+
+}
+
+/*For bigger screen then normal 960px desktop*/
+@media only screen and (max-width: 1199px) {
+.main-menu ul li {
+    margin: 0 20px;
+}
+.main-menu ul li a {
+    font-size: 28px;
+}
+.menu-content {
+    margin-right: 80px;
+}
+h1, .h2 {
+    font-size: 80px;
+}
+.hero-content-top p {
+    font-size: 40px;
+    line-height: 53px;
+}
+
+.hero-content-top {
+    margin-bottom: 58px;
+}
+.shape1 {
+    left: 1%;
+}
+
+.date-slider .owl-next, 
+.date-slider .owl-prev{
+  left: -25px;
+}
+.date-slider .owl-prev{
+  left: auto;
+  right: -25px;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+}
+
+/*For Tablet Layout*/
+@media (max-width: 991px) {
+.header-top {
+    margin-bottom: 30px;
+}
+
+.shape1, 
+.shape2{
+    display: none
+}
+header.header-section {
+    padding: 35px 0;
+}
+h1, .h2 {
+    font-size: 65px;
+}
+.hero-section {
+    padding: 50px 0;
+}
+
+.hero-content-top p {
+    font-size: 34px;
+    line-height: 42px;
+}
+a.hero-btn {
+    font-size: 45px;
+}
+h2, .h2 {
+    font-size: 55px;
+}
+.slider-section {
+    padding: 30px 0 80px;
+}
+
+}
+
+/*For Wide Mobile Layout*/
+@media (max-width: 767px) {
+.main-menu {
+  display: none; 
+}
+.offcanves-menu{
+    display: block;
+}
+.menu-bar{
+    display: block;
+}
+
+.header-right {
+    display: none;
+}
+.offcanves-menu .header-btn-wrap{
+    display: block;
+}
+.menu-content{
+    display: none;
+}
+.main-logo {
+    max-width: 225px;
+}
+header.header-section {
+    padding: 30px 0;
+}
+.header-top {
+    margin-bottom: 0;
+}
+h1, .h2 {
+    font-size: 55px;
+}
+.hero-content-top p {
+    font-size: 30px;
+    line-height: 38px;
+}
+a.hero-btn {
+    font-size: 36px;
+    padding: 15px 50px;
+}
+.hero-content-botttom p {
+    font-size: 20px;
+    line-height: 30px;
+}
+h2, .h2 {
+    font-size: 45px;
+}
+
+
+}
+
+@media (max-width: 575px)  {
+
+}
+
+/*For 320-384px up Mobile Layout*/
+
+@media (max-width: 479px) {
+h1, .h2 {
+    font-size: 45px;
+}
+.hero-content-top {
+    margin-bottom: 36px;
+}
+.hero-content-top p {
+    font-size: 24px;
+    line-height: 34px;
+}
+a.hero-btn {
+    font-size: 30px;
+    padding: 10px 40px;
+}
+.date-bottom p {
+    font-size: 26px;
+}
+.date-bottom span {
+    font-size: 45px;
+    padding: 10px 0;
+}
+h2, .h2 {
+    font-size: 36px;
+}
+
+}
+
+
+@media (max-width: 320px) {
+
+}
+

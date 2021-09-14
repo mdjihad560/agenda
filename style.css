@@ -1,0 +1,456 @@
+/*--------------------------------------------------------------============================================================
+  
+1. Typography
+
+
+
+
+[Main Stylesheet]
+
+Project:   Online School
+Version:    0.1
+Last change:    02.09.2019
+Primary use:    Online School- Simple & Clean Templatee
+
+
+[Typography]
+
+Body: 20px 'Heebo', sans-serif;
+
+
+
+/*==============================
+[Table of contents]
+
+
+=============================================================--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 500;
+  background-color: #fff;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:active, a:focus, a:active {
+  color: #222222;
+  text-decoration:none !important
+}
+input{
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #999;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+dl {
+  margin-bottom: 1.6em;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 1.6em;
+}
+table,
+th,
+td {
+  border: 1px solid #eaeaea;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.6em;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+th {
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+td {
+  border-width: 0 1px 1px 0;
+}
+th, td {
+  padding: 0.4em;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+iframe {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  color: #000;
+  font-weight: 700;
+  font-family: 'Baloo Da 2', cursive;
+
+}
+h1,
+.h2{
+    font-size: 88.9734px;
+}
+h2,
+.h2{
+    font-size: 62.8048px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*header section stysheet*/
+header.header-section {
+    padding: 70px 0;
+}
+.header-top {
+    position: relative;
+}
+a.video-btn {
+    background: #EE4715;
+    border-radius: 15.0843px;
+    font-size: 31px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Baloo Da 2', cursive;
+    padding: 8px 24px 8px 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+a.video-btn img{
+    margin-right: 10px;
+}
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.header-btn-wrap p{
+    font-weight: 500;
+    font-size: 22.505px;
+    color: #EE4715;
+    margin: 0;
+}
+.header-social {
+    color: #EE4715;
+    font-size: 42px;
+    margin-right: 25px;
+}
+
+.main-menu ul li{
+    margin: 0 25px;
+    display: inline-block;
+}
+.main-menu ul li:first-child{
+    margin-left: 0;
+}
+.main-menu ul li:last-child{
+    margin-right: 0;
+}
+.main-menu ul li a{
+    font-size: 31.4024px;
+    color: #292929;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.4s;
+    font-family: 'Baloo Da 2', cursive;
+}
+.main-menu ul li a:before {
+    content: "";
+    left: 0;
+    bottom: 6px;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    background: #292929;
+    border-radius: 2.61687px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.main-menu ul li a:hover:before{
+    width: 100%;
+    opacity: 1;
+}
+.menu-content {
+    text-align: center;
+    margin-right: 45px;
+}
+.menu-content h6{
+    font-size: 15.5px;
+    color: #EE4715;
+    font-weight: 700;
+    margin: 0;
+}
+.menu-content h5{
+    font-size: 31.4024px;
+    font-weight: 700;
+    color: #A7A7A7;
+}
+
+
+/* offcanvas menu */
+.main-menu {
+    display: block; 
+}
+.offcanves-menu{
+    display: none;
+}
+.offcanves-menu {
+    width: 300px;
+    background: #ffffff;
+    height: 100%;
+    position: fixed;
+    z-index: 111;
+    padding: 62px 20px;
+    margin-left: -300px;
+    transition: .3s;
+    padding-right: 0px;
+}
+.offcanves-menu ul {
+    padding-top: 20px;
+}
+.offcanves-menu ul li {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    margin-right: 25px;
+}
+.offcanves-menu ul li:last-child {
+    border-bottom: 0px;
+}
+.offcanves-menu ul li a {
+    padding: 16px 0px;
+    display: block;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.4s; 
+}
+.offcanves-menu ul li a:hover {
+    color: #242D48;
+}
+.offcanves-menu.active {
+    margin-left: 0px;
+    z-index: 999;
+}
+.off-menu span.menubar {
+    font-size: 28px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    color: #ffffff;
+ }
+.off-menu {
+    float: right;
+}
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #333333;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 1px solid #333333;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.close:hover {
+    color: #EE4715;
+    border-color: #EE4715;
+}
+.offcanvas-overlay {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      position: fixed;
+      z-index: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: .5s;
+ }
+.offcanvas-overlay.active {
+      opacity: .3;
+      z-index: 111;
+      visibility: visible;
+ }
+.menu-bar {
+      display: none;
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      color: #000;
+      font-size: 35px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      display: none;
+}
+
+/*hero section stylesheet*/
+.hero-section {
+    padding: 70px 0;
+    position: relative;
+}
+.hero-content {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.hero-content-top {
+    margin-bottom: 80px;
+}
+.hero-content-top p{
+    font-size: 52.3373px;
+    color: #282828;
+    line-height: 61px;
+}
+.hero-content-botttom p {
+    font-size: 26.1687px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+.hero-content-botttom p span{
+  color: #EE4715;
+}
+a.hero-btn {
+    background: #EE4715;
+    border: 5.23373px solid #000000;
+    box-sizing: border-box;
+    border-radius: 13.0843px;
+    display: inline-block;
+    font-size: 57px;
+    font-weight: 700;
+    color: #fff;
+    padding: 22px 53px;
+    font-family: 'Baloo Da 2', cursive;
+    border-bottom: 12px solid #000;
+    margin-bottom: 20px;
+}
+
+.shape1 {
+    position: absolute;
+    top: 6%;
+    width: 17%;
+    left: 8%;
+}
+.shape2 {
+    width: 27%;
+    position: absolute;
+    bottom: 27px;
+    right: 45px;
+}
+
+/*slider section stylesheet*/
+.slider-title {
+    margin-bottom: 30px;
+}
+
+.date-slider-item {
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.date-top {
+    background-color: #EE4715;
+    padding: 14px;
+}
+.date-top p{
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+}
+.date-top p:before, 
+.date-top p:after {
+    content: "";
+    left: 5px;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-size: cover;
+    background-image: url(images/circel.png);
+}
+.date-top p:after {
+    left: auto;
+    right: 5px;
+}
+.date-top {
+    background-color: #EE4715;
+}
+.date-bottom {
+    padding: 25px;
+}
+.date-bottom p{
+    margin: 0;
+    text-transform: capitalize;
+}
+.date-bottom p {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.date-bottom span {
+    font-size: 47px;
+    font-weight: 700;
+    padding: 17px 0;
+    display: block;
+}
+
+.date-slider .owl-next, 
+.date-slider .owl-prev{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: -90px;
+    transform: translateY(-50%);
+}
+.date-slider .owl-prev{
+    left: auto;
+    right: -90px;
+}
+.slider-section {
+    padding: 30px 0 100px;
+}
